@@ -49,14 +49,14 @@ function App() {
                         <img
                             src={opened}
                             alt="door opened"
-                            width="80%"
+                            width="70%"
                             className="self-center"
                         />
                     ) : (
                         <img
                             src={locked}
                             alt="door locked"
-                            width="80%"
+                            width="70%"
                             className="self-center"
                         />
                     )}
