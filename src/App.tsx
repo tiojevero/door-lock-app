@@ -12,7 +12,7 @@ function App() {
                 `https://blynk.cloud/external/api/get?token=StAXsojzp7kqKxGJRhsbmkHAAiOGyf11&dataStreamId=1`
             )
             .then((res) => {
-                if (res.data == 1) {
+                if (res.data === 1) {
                     setDoorState(true);
                 } else {
                     setDoorState(false);
@@ -30,7 +30,9 @@ function App() {
             .then(() => getDoorState());
     };
 
-    useEffect(() => getDoorState, []);
+    useEffect(() => {
+        getDoorState();
+    }, []);
 
     return (
         <div className="App text-center">
