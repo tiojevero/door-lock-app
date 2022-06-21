@@ -52,14 +52,14 @@ function App() {
                             src={opened}
                             alt="door opened"
                             width="70%"
-                            className="self-center"
+                            className="self-center max-w-sm"
                         />
                     ) : (
                         <img
                             src={locked}
                             alt="door locked"
                             width="70%"
-                            className="self-center"
+                            className="self-center max-w-sm"
                         />
                     )}
                 </div>
