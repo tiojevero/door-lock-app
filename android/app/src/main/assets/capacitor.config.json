@@ -1,0 +1,6 @@
+{
+	"appId": "com.example.app",
+	"appName": "Kunci Pintu",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

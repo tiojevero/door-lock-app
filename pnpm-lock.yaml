@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@capacitor/android': ^3.6.0
   '@capacitor/cli': ^3.6.0
   '@capacitor/core': ^3.6.0
   '@emotion/css': ^11.9.0
@@ -22,6 +23,7 @@ specifiers:
   web-vitals: ^2.1.4
 
 dependencies:
+  '@capacitor/android': 3.6.0_@capacitor+core@3.6.0
   '@capacitor/cli': 3.6.0
   '@capacitor/core': 3.6.0
   '@emotion/css': 11.9.0
@@ -1428,6 +1430,14 @@ packages:
 
   /@bcoe/v8-coverage/0.2.3:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
+    dev: false
+
+  /@capacitor/android/3.6.0_@capacitor+core@3.6.0:
+    resolution: {integrity: sha512-X6n0OLy7BE3c6qfVuL7UYyq/aIwEsqIAqtyDOwMdj5k+P1rLQVsGaWERXUtC0BGeoKBD5YgbWiyKwAwg5Spjdg==}
+    peerDependencies:
+      '@capacitor/core': ^3.6.0
+    dependencies:
+      '@capacitor/core': 3.6.0
     dev: false
 
   /@capacitor/cli/3.6.0:
