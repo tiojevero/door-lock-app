@@ -5,12 +5,12 @@ import axios from "axios";
 
 function App() {
     const [doorState, setDoorState] = useState<boolean>(false);
+    const BLYNK_TOKEN = process.env.REACT_APP_BLYNK_TOKEN;
+    const BLYNK_BASE_URL = process.env.REACT_APP_BLYNK_BASE_URL;
 
     const getDoorState = () => {
         axios
-            .get(
-                `https://blynk.cloud/external/api/get?token=StAXsojzp7kqKxGJRhsbmkHAAiOGyf11&dataStreamId=1`
-            )
+            .get(`${BLYNK_BASE_URL}get?token=${BLYNK_TOKEN}&dataStreamId=1`)
             .then((res) => {
                 if (res.data === 1) {
                     setDoorState(true);
@@ -23,7 +23,7 @@ function App() {
     const updateDoorState = (state: boolean) => {
         axios
             .get(
-                `https://blynk.cloud/external/api/update?token=StAXsojzp7kqKxGJRhsbmkHAAiOGyf11&dataStreamId=1&value=${
+                `${BLYNK_BASE_URL}update?token=${BLYNK_TOKEN}&dataStreamId=1&value=${
                     state ? 1 : 0
                 }`
             )
